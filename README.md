@@ -8,7 +8,7 @@ patterns](http://patterns.projects.cs.ksu.edu/documentation/patterns/ltl.shtml)
 project.
 
 The usage examples can be found on [tests
-folder](https://github.com/adalrsjr1/dsl-ltl-patterns/blob/master/src/test/java/github/com/adalrjsr1/ltl/specpatterns/TestSpecpattern.groovy) 
+folder](https://github.com/adalrsjr1/dsl-ltl-patterns/tree/master/src/test/java/github/com/adalrjsr1/ltl).
 
 ## Example
 
