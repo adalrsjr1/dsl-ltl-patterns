@@ -1,13 +1,12 @@
 # DSL for LTL properties
 
-This project aims to facilitate writing LTL properties by abstracting the
-classical LTL notation.
+This project aims to facilitate writing LTL properties by abstracting the classical LTL notation.
 
 The DSL created is based on the [spec
 patterns](http://patterns.projects.cs.ksu.edu/documentation/patterns/ltl.shtml)
 project.
 
-The usage examples can be found on [tests
+You can find the usage examples  in [tests
 folder](https://github.com/adalrsjr1/dsl-ltl-patterns/tree/master/src/test/java/github/com/adalrjsr1/ltl).
 
 ## Example
@@ -24,20 +23,12 @@ void testBoundedContext() {
 
 ## Labeled Transition System (LTS)
 
-This project also includes a framework to transform the DSLs into an automata to
-execute check trances.
+This project also includes a framework to transform the DSLs into an automaton to execute check trances.
 
-The implementation is based on [Spot](spot.lrde.epita.fr), and requires its
-installation as dependency of the project.
+The implementation is based on [Spot](spot.lrde.epita.fr) and requires its installation as the dependency of the project.
 
-Internally, the framework compile the DSL into LTL, and then transform it to
-[HOAF format](https://github.com/adl/hoaf). The Spot parses this data structure
-and creates an automata. The automata moves acording to the inputs. The details
-about the automata creation can be found
-[here](https://github.com/adalrsjr1/dsl-ltl-patterns/blob/master/src/main/java/github/com/adalrsjr1/ltl/core/LabeledTransitionSystemFactory.groovy)
+Internally, the framework compiles the DSL into LTL and then transform it to [HOAF format](https://github.com/adl/hoaf). The Spot parses this data structure and creates an automaton. The automata move according to the inputs. More  details about the automata creation [here](https://github.com/adalrsjr1/dsl-ltl-patterns/blob/master/src/main/java/github/com/adalrsjr1/ltl/core/LabeledTransitionSystemFactory.groovy)
 
-The factory can be updated to create Büchi automatas to check messages offline
-or online, as a monitor.
+The factory can be updated to create Büchi automata to check messages on the fly, as a monitor, or logged.
 
-To change this creation it is necessary to update the factory and change the
-creation command `ltl2tgba --monitor`.
+You can change this mode by updating the factory  to use the statement `ltl2tgba --monitor`.
