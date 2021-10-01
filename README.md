@@ -2,9 +2,9 @@
 
 This project aims to facilitate writing LTL properties by abstracting the classical LTL notation.
 
-The DSL created is based on the [spec
+The DSL created is based on [spec
 patterns](http://patterns.projects.cs.ksu.edu/documentation/patterns/ltl.shtml)
-project.
+project (or [web archive](https://web.archive.org/web/20190314161601/http://patterns.projects.cs.ksu.edu/documentation/patterns/ltl.shtml).
 
 You can find the usage examples  in [tests
 folder](https://github.com/adalrsjr1/dsl-ltl-patterns/tree/master/src/test/java/github/com/adalrjsr1/ltl).
